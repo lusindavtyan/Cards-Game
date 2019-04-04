@@ -1,0 +1,229 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Unlock', cursive;
+    background-color: #346009;
+}
+/*HEADINGS*/
+
+h1 {
+    text-align: center;
+    font-family: 'Unlock', cursive;
+    font-size: 60px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+    @media screen and (max-width: 790px){
+        h1 {
+            font-size: 45px;
+           }
+    }
+
+h4 {
+    color: #000;
+    font-size: 25px; 
+}
+    @media screen and (max-width: 790px){
+        h4 {
+            font-size: 22px;
+            word-spacing: 1.5px;
+            margin: 0 40px 20px;
+         }
+    }
+
+h5 {
+    font-size: 30px;
+    color: #ff0000;
+}
+
+    @media screen and (max-width: 1600px){
+        h5 {
+            font-size: 18px;
+        }
+    }
+#cellA {
+    color: 
+}
+
+
+/*PARAGRAPH TEXTS*/
+
+.instruction-p {
+   line-height: 30px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-top: solid 1px #555;
+}
+
+    @media screen and (max-width: 1600px){
+        .instruction-p {
+             line-height: 25px;
+             font-size: 18px;
+             word-spacing: 2px;
+        }
+    }
+
+    @media screen and (max-width: 790px){
+        .instruction-p {
+             line-height: 20px;
+             font-size: 13px;
+             word-spacing: 2px;
+        }
+    }
+
+
+.objective {
+    text-align: center;
+}
+
+/*CONTAINER AMD DIV'S*/
+
+
+.col {
+    float: left;
+    width: 50%;
+    padding: 10px 10px; 
+}
+.row {
+    margin: 0 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    @media screen and (max-width: 1600px) {
+      .col {
+        width: 50%;
+        display: inline-block;
+      }
+    img{
+      padding-top: 40px;
+      max-width: 70px;
+      height: auto;
+      }
+    }
+    @media screen and (max-width: 790px) {
+      .col {
+        width: 50%;
+        height: 50%;
+        display: inline-block;
+      }
+    img{
+      padding-top: 5px;
+      max-width: 50px;
+      height: auto;
+      }
+    }
+    @media screen and (max-width: 1145px) {
+      .col {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+      }
+    }
+.cont {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 350px;
+}
+    @media screen and (max-width: 1145px){
+        #second-cont {
+            position: relative;
+            margin-top: 60px;
+        }  
+    }
+    @media screen and (max-width: 790px){
+        .cont {
+            height: 250px;    
+        }   
+    }
+
+/*BUTTONS*/
+
+#bt, #bt2 {
+    font-size: 25px;
+    width: 120px;
+    height: 63px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgb(57, 58, 60), 0 6px 20px 0 rgb(57, 58, 60);
+    background-color: #424657;
+    color: #fff;
+ }
+#bt:hover,#bt2:hover {
+    box-shadow: 0 2px 5px 2px rgb(49, 49, 49), 0 2px 5px 2px rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+
+.btn {
+    text-align: center;
+    margin: 10px 50px;
+}
+
+    @media screen and (max-width: 1145px){
+        #bt, #bt2 {
+            font-size: 18px;
+            width: 90px;
+            height: 45px;
+        }
+    }
+
+    @media screen and (max-width: 1145px){
+        .btn {
+            position: absolute;
+            margin: -500px 38%; 
+        }  
+    }
+
+    @media screen and (max-width: 790px){
+        #bt, #bt2 {
+            font-size: 15px;
+            width: 65px;
+            height: 35px;
+        }
+    }
+
+    @media screen and (max-width: 790px){
+        .btn {
+            position: absolute;
+            margin: -400px 1% 0 41%; 
+
+        }  
+    }
+
+/*MIN MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+    .container {
+        width: 600px;
+        
+    }
+}
+
+
+/*THE END*/
+
+
+
+
+
+
+
+
